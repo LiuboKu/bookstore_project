@@ -1,3 +1,4 @@
+#https://github.com/LiuboKu/bookstore_project.git
 import json
 from datetime import datetime
 from collections import Counter
@@ -184,7 +185,6 @@ def load_data(employee_mgr, book_mgr, sale_mgr, filename="data.json"):
         sale_mgr.from_dict(data.get("sales", []))
     except FileNotFoundError:
         print("Файл даних не знайдено. Створюємо нову базу.")
-
 
 
 
